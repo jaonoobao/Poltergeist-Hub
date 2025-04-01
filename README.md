@@ -6,6 +6,7 @@ local gameid = game.GameId
 
     if supportedGames[gameid] then
         loadstring(game:HttpGet(supportedGames[gameid], true))()
+        print("Game supported!")
     else
       warn("Game not supported.")
     end
